@@ -1,38 +1,67 @@
-<!DOCTYPE html>
-<meta charset="UTF-8"> 
 <html>
-<head>
-	<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
-	<script type="text/javascript" src="js/sly.min.js"></script>
-	<script type="text/javascript" src="js/jquery.sticky.js"></script>
-	<script type="text/javascript" src="js/jquery.lazyload.min.js"></script>
-	
-	<link rel="stylesheet" type="text/css" href="css/main.css">
-</head>
-<body>
-	<div class="background-image forest lazy"></div>
-		<div class="circular-image">
-			<img class="lazy" id="face" data-original="img/volleyball.jpg" />
-		</div>
-		<div class="background-image forest" data-original="img/forest.jpg"></div>
-		<div style="text-align:center;" class="nameinTitle">Jesse Jie</div>
-		<div class="container">
-			<button id="prev" style="float:left;margin-left:20%;margin-top:60px;"><</button>
-			<div class="frame" id ="frame">
-				<ul class="slidee">
-					<li><div class="text" id="first">Resume</div></li>
-					<li><div class="text">Interests</div></li>
-					<li><div class="text">Contact Me</div></li>
-					<li><div class="text">Recommendations</div></li>
-					<li><div class="text">Rant</div></li>
-					<li><div class="text">6</div></li>
-					<li><div class="text">7</div></li>
-				</ul>
-			</div>
-			<button id="next" style="float:right;margin-right:20%;margin-top:60px;">></button></button>
-		</div>
-		<div class='middleColumn'></div>
-	
-<script type="text/javascript" src="js/main.js"></script>
-</body>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/workspaces.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="js/workspaces.js"></script>
+    <script type="text/javascript">
+    $(document).ready( function() {
+      $('body').init_workspaces();
+    });
+    </script>
+  </head>
+  <body>
+    <div class="workspaces">
+      <div class="workspace" id="workspace-1">
+          <nav class="navbar navbar-inverse">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Jesse Jie</a>
+              </div>
+
+              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav pull-right">
+                  <li><a href="#">Link <span class="sr-only">(current)</span></a></li>
+                  <li><a href="#">Link</a></li>
+                </ul>
+              </div><!-- /.navbar-collapse -->
+          </nav>
+          <div class="container">
+              <div class="row">
+                  <img src="img/me.jpg" class="circle-img"/>
+              </div>
+              <div class="row">
+                  <h1 class="workspace-1-text">Jesse Jie</h1>
+                  <h3 class="workspace-1-text">Software Engineer</h3>
+              </div>
+              <div class="row">
+                  <div class="col-md-6 col-md-offset-3">
+                      <div class="panel panel-default">
+                          <table class="table toc">
+                              <tr>
+                                  <td id="current-workspace-toc">Home</td>
+                                  <td>Projects</td>
+                              </tr>
+                              <tr>
+                                  <td>Resume</td>
+                                  <td>FAQ</td>
+                              </tr>
+                          </table>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="workspace" id="workspace-2"></div>
+      <div class="workspace" id="workspace-3"></div>
+      <div class="workspace" id="workspace-4"></div>
+    </div>
+  </body>
 </html>

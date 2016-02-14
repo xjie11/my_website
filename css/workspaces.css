@@ -1,0 +1,68 @@
+#workspace-1{
+  background-image: url(../img/skyrim-2.jpg);
+}
+
+#workspace-2{
+  background-image: url(../img/skyrim-1.jpg);
+}
+
+#workspace-3{
+  background-image: url(../img/skyrim-3.jpg);
+}
+
+#workspace-4{
+  background-image: url(../img/skyrim-4.jpg);
+}
+
+.workspace{
+  display: none;
+  -webkit-transition: -webkit-transform 0.4s linear 0.2s;
+  -moz-transition: -moz-transform 0.4s linear 0.2s;
+  background-position: top;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+
+.workspace.right{
+  transform: translate(100%);
+  -webkit-transform: -webkit-translate(100%);
+}
+
+.workspace.left{
+  transform: translate(-100%);
+  -webkit-transform: -webkit-translate(-100%);
+}
+
+.workspace.up{
+  transform: translate(0,-100%);
+  -webkit-transform: -webkit-translate(0,-100%);
+}
+
+.workspace.down{
+  transform: translate(0,100%);
+  -webkit-transform: -webkit-translate(0,100%);
+}
+
+.workspace.active{
+  display: inline-block;
+  vertical-align: top;
+  height:100%;
+  width:100%;
+}
+
+.workspaces{
+  padding:0;
+  margin:0;
+  width: 100%;
+  height: 100%;
+}
+
+body{
+  overflow-x:hidden;
+  height:100%;
+  width:100%;
+  padding:0;
+  margin:0;
+}
