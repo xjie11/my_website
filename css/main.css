@@ -70,6 +70,42 @@
     text-align:center;
 }
 
-#workspace-1 #current-workspace-toc{
+.arrows{
+    display: inline-block;
+}
+
+.arrow{
+    padding: 2px 2px 2px 1px;
+    border: 1px solid white;
+    border-radius: 20%;
+}
+
+.instructions{
+    font-size: 16px;
+}
+
+.underline{
     text-decoration: underline
+}
+
+.fill{
+    background-color: white;
+}
+
+.logo div{
+    border: 1px solid white;
+    border-radius: 20%;
+    height:36px;
+    width:36px;
+    display:inline-block;
+    float:left;
+}
+
+.clear-left{
+    clear:left;
+}
+
+.logo{
+    margin-left: 50px;
+    margin-top: 30px;
 }
