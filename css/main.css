@@ -81,7 +81,7 @@
 }
 
 .instructions{
-    font-size: 16px;
+    font-size: 20px;
 }
 
 .underline{
@@ -108,4 +108,42 @@
 .logo{
     margin-left: 50px;
     margin-top: 30px;
+}
+
+.workspace-title{
+    background-color: #22272B;
+    color: white;
+    padding-bottom: 60px;
+    margin-bottom: 40px;
+}
+
+.workspace-title h1{
+    font-size: 60px;
+}
+
+.workspace-title h3{
+    margin-right:300px;
+    font-weight:lighter;
+}
+
+.timewinder{
+    color: #006666;
+    font-size:36px;
+}
+
+.bigger-list-text li{
+    font-size:16px;
+}
+
+.bigger-list-text{
+    margin-bottom:15px;
+}
+
+.circle-list{
+    list-style-type: circle;
+}
+
+.workspaces-list{
+    color:#DD4814;
+    font-size:36px;
 }
